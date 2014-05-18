@@ -1,8 +1,11 @@
 package learning_java;
 
+import Solutions.SOLUTIONS.BREAK_GLASS_IN_CASE_OF_EMERGENCY.src.Baby;
+
+
 public class Toy {
-	String name;
-	Baby owner;
+	final String name;
+	private Baby owner;
 	
 	/*
 	* This is called a constructor. You use a constructor to instantiate a
@@ -13,11 +16,18 @@ public class Toy {
 	public Toy(String name) {
 		this.name = name;
 	}
-	/*
-	 * This is also a valid constructor for a Toy.
-	 */
-	public Toy(){
-	
+
+	public Baby getOwner() {
+		return owner;
 	}
+
+	public Boolean setOwner(Baby owner) {
+	//TODO set the owner of the baby but be careful of thieves! return true or false based on 
+		//whether this was a lawful action. false if the toy owner is not null true if the 
+		// Prospective owner is null or if the toy owner is null. 
+		return null;
+	}
+	
+	
 	
 }

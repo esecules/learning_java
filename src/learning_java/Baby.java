@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Baby {
 	String firstName, lastName;
 	Boolean isCrying = false;
-	ArrayList<Baby> friends = new ArrayList<Baby>();
-	ArrayList<Toy> toys = new ArrayList<Toy>();
+	private ArrayList<Baby> friends = new ArrayList<Baby>();
+	private ArrayList<Toy> toys = new ArrayList<Toy>();
 	
 	public Baby(String first, String last) {
 		// TODO initialize name fields
@@ -37,6 +37,19 @@ public class Baby {
 		//if a baby is already in the friend list don't add them a second time!
 		
 	}
+
+	public ArrayList<Baby> getFriends() {
+		return friends;
+	}
+
+	public ArrayList<Toy> getToys() {
+		return toys;
+	}
+
+	
+
+	
+	
 
 
 }

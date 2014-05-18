@@ -2,8 +2,8 @@ package Solutions.SOLUTIONS.BREAK_GLASS_IN_CASE_OF_EMERGENCY.src;
 
 
 public class Toy {
-	String name;
-	Baby owner;
+	final String name;
+	private Baby owner;
 	
 	/*
 	* This is called a constructor. You use a constructor to instantiate a
@@ -14,11 +14,28 @@ public class Toy {
 	public Toy(String name) {
 		this.name = name;
 	}
-	/*
-	 * This is also a valid constructor for a Toy.
-	 */
-	public Toy(){
-	
+
+	public Baby getOwner() {
+		return owner;
 	}
+
+	public Boolean setOwner(Baby owner) {
+		if( this.owner == null ){
+			this.owner = owner;
+			System.out.println("New Owner " + owner.getName());
+		}
+		else if (owner == null){
+			System.out.println("Giving up toy " + this.owner.getName());
+			this.owner = owner;
+		}
+		else {
+			System.out.println("Stealing toy!! " + owner.getName());
+			return false;
+		}
+		
+		return true;
+	}
+	
+	
 	
 }
