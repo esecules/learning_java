@@ -1,3 +1,5 @@
+package Solutions.SOLUTIONS.BREAK_GLASS_IN_CASE_OF_EMERGENCY.src;
+
 
 public class Toy {
 	String name;
