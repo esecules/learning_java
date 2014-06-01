@@ -23,8 +23,7 @@ public class Toy {
 
 	public Boolean setOwner(Baby owner) {
 	//TODO set the owner of the baby but be careful of thieves! return true or false based on 
-		//whether this was a lawful action. false if the toy owner is not null true if the 
-		// Prospective owner is null or if the toy owner is null. 
+		//whether this was a lawful action. return true if owner = null and false otherwise.
 		return null;
 	}
 	
